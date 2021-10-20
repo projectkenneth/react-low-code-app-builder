@@ -1,0 +1,48 @@
+.node {
+    padding: 10px;
+    border: 3pt solid #bbb;
+    background-color: #fff;
+}
+
+.node.node-start {
+    color: green;
+}
+
+.node.node-end {
+    color: red;
+}
+
+.node.node-if {
+    color: blue;
+}
+
+.node.node-log {
+    background-color: #ddd;
+}
+
+.node.node-assign,
+.node.node-log {
+    color: black;
+}
+
+.selected .node {
+    box-shadow: 0px 0px 19px 12px #DBDBDB;
+    border-color: #000;
+}
+
+.container .react-flow__edge-path {
+    stroke: #ccc;
+    stroke-width: 3pt;
+}
+
+.container .selected .react-flow__edge-path {
+    stroke: #000;
+}
+
+.container .selected .react-flow__edge-path .react-flow__arrowhead {
+    stroke: #000;
+}
+
+.container .node input {
+    width: 120px;
+}
