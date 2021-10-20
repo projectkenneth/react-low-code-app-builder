@@ -7,7 +7,7 @@ import Config from "../Config";
 import Sidebar from "./Sidebar";
 import CodeDisplay from "../CodeGenerator/CodeDisplay";
 
-import ReactFlowWrapper from "../ReactFlow/ReactFlowWrapper";
+import DiagramAdapter from "./DiagramAdapter";
 
 const Canvas = () => {
     const [nodes, setNodes] = useState([
@@ -85,7 +85,7 @@ const Canvas = () => {
                 </div>
                 <div className="col col-7">
                     <h2>Canvas</h2>
-                    <ReactFlowWrapper nodes={nodes} setNodes={setNodes} onAddNode={onAddNode} onActivateNode={onActivateNode} onDeactivateAll={onDeactivateAll} />
+                    <DiagramAdapter nodes={nodes} setNodes={setNodes} onAddNode={onAddNode} onActivateNode={onActivateNode} onDeactivateAll={onDeactivateAll} />
                 </div>
                 <div className="col col-4">
                     <h2>Property Panel</h2>

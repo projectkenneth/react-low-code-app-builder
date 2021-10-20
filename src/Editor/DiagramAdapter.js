@@ -1,11 +1,11 @@
 import { useState, useRef } from "react";
 import ReactFlow, { addEdge, removeElements, isNode } from "react-flow-renderer";
 
-import IfNode from "./Nodes/IfNode";
-import StartNode from "./Nodes/StartNode";
-import EndNode from "./Nodes/EndNode";
-import AssignNode from "./Nodes/AssignNode";
-import ConsoleCustomNode from "./Nodes/ConsoleNode";
+import IfNode from "../ReactFlow/Nodes/IfNode";
+import StartNode from "../ReactFlow/Nodes/StartNode";
+import EndNode from "../ReactFlow/Nodes/EndNode";
+import AssignNode from "../ReactFlow/Nodes/AssignNode";
+import ConsoleCustomNode from "../ReactFlow/Nodes/ConsoleNode";
 
 const nodeTypes = {
     if: IfNode,
@@ -18,7 +18,7 @@ const nodeTypes = {
 let id = 2;
 const getId = () => `node_${id++}`;
 
-const ReactFlowWrapper = ({ nodes, setNodes, onAddNode, onActivateNode, onDeactivateAll }) => {
+const DiagramAdapter = ({ nodes, setNodes, onAddNode, onActivateNode, onDeactivateAll }) => {
     const reactFlowWrapper = useRef(null);
     const [reactFlowInstance, setReactFlowInstance] = useState(null);
 
@@ -105,4 +105,4 @@ const ReactFlowWrapper = ({ nodes, setNodes, onAddNode, onActivateNode, onDeacti
     );
 }
 
-export default ReactFlowWrapper;
+export default DiagramAdapter;
