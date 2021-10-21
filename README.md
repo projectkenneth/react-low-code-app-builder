@@ -11,7 +11,7 @@ The goal is to develop a close-to-real-world project, then write articles revolv
     - [ReactFlow](https://reactflow.dev/)
 - Quick demo:
     
-    ![Quick Demo](demo.mov)
+    ![Quick Demo](demo.gif)
 
 ## Concepts
 Here are the technical concepts and strategies used in this learning project. Each item will have its corresponding article. For the items with finished articles, the link will also be available in this list.
